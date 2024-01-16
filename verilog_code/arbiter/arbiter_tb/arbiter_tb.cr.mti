@@ -1,0 +1,15 @@
+F:/mycode/cpu/tuling_complete/verilog_code/arbiter/arbiter.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/arbiter/arbiter.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module arbiter
+
+Top level modules:
+	arbiter
+
+} {} {}} F:/mycode/cpu/tuling_complete/verilog_code/arbiter/arbiter_tb.v {1 {vlog -work work -vopt -stats=none {F:\mycode\cpu\tuling_complete\verilog_code\arbiter\arbiter_tb.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module arbiter_tb
+
+Top level modules:
+	arbiter_tb
+
+} {} {}}

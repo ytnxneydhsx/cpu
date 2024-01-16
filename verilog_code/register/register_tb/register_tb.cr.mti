@@ -1,0 +1,15 @@
+F:/mycode/cpu/tuling_complete/verilog_code/register/register_pluse.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/register/register_pluse.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module register_pluse
+
+Top level modules:
+	register_pluse
+
+} {} {}} F:/mycode/cpu/tuling_complete/verilog_code/register/register_pluse_tb.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/register/register_pluse_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module register_pluse_tb
+
+Top level modules:
+	register_pluse_tb
+
+} {} {}}
