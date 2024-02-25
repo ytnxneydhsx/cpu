@@ -1,0 +1,218 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/mycode/cpu/tuling_complete/verilog_code/ram/ram_tb
+T_opt
+!s110 1708878018
+V_2lHCXTU]CN[eCaURK@0<0
+04 6 4 work bus_tb fast 0
+=1-902e164ec4f8-65db68c2-316-7ffc
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.4;61
+valu
+!s110 1708878008
+!i10b 1
+!s100 GBMCmY^WIHklRGVj`kdN32
+IUB]`f0YKO3CiA1Za?Z4Pj2
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dF:/mycode/cpu/tuling_complete/verilog_code/BUS/bus_tb_3
+w1705245696
+8F:/mycode/cpu/tuling_complete/verilog_code/BUS/alu.v
+FF:/mycode/cpu/tuling_complete/verilog_code/BUS/alu.v
+L0 1
+Z2 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1708878008.935000
+!s107 F:/mycode/cpu/tuling_complete/verilog_code/BUS/alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/mycode/cpu/tuling_complete/verilog_code/BUS/alu.v|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+varbiter
+Z4 !s110 1708878009
+!i10b 1
+!s100 ^cOi1iY^?@YgbQNXhnzHd0
+I@^93Gn8MRNY6`S;77FbD32
+R0
+R1
+w1708870585
+8F:/mycode/cpu/tuling_complete/verilog_code/BUS/arbiter.v
+FF:/mycode/cpu/tuling_complete/verilog_code/BUS/arbiter.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1708878009.028000
+!s107 F:/mycode/cpu/tuling_complete/verilog_code/BUS/arbiter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/mycode/cpu/tuling_complete/verilog_code/BUS/arbiter.v|
+!i113 0
+R3
+vbus
+R4
+!i10b 1
+!s100 Vmj>DimDCmH1Lo<X>UFIh3
+IDCmj[QPWZA[]DM^ik[63Q0
+R0
+R1
+w1708878003
+8F:/mycode/cpu/tuling_complete/verilog_code/BUS/bus.v
+FF:/mycode/cpu/tuling_complete/verilog_code/BUS/bus.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1708878009.122000
+!s107 F:/mycode/cpu/tuling_complete/verilog_code/BUS/bus.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/mycode/cpu/tuling_complete/verilog_code/BUS/bus.v|
+!i113 0
+R3
+vbus_tb
+R4
+!i10b 1
+!s100 ngVc4=Z]>N`CFMSXhinR81
+IVjeE_UM?VMa<Yh>^1a>1d3
+R0
+R1
+w1708877160
+8F:/mycode/cpu/tuling_complete/verilog_code/BUS/bus_tb.v
+FF:/mycode/cpu/tuling_complete/verilog_code/BUS/bus_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1708878009.214000
+!s107 F:/mycode/cpu/tuling_complete/verilog_code/BUS/bus_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/mycode/cpu/tuling_complete/verilog_code/BUS/bus_tb.v|
+!i113 0
+R3
+vdecoder_2to4
+R4
+!i10b 1
+!s100 m161H>bbcdfmNJZK`2?NS2
+IRL?6BkAS]TmSmh4S[3L=d2
+R0
+R1
+w1705245122
+8F:/mycode/cpu/tuling_complete/verilog_code/BUS/decoder_2to4.v
+FF:/mycode/cpu/tuling_complete/verilog_code/BUS/decoder_2to4.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1708878009.306000
+!s107 F:/mycode/cpu/tuling_complete/verilog_code/BUS/decoder_2to4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/mycode/cpu/tuling_complete/verilog_code/BUS/decoder_2to4.v|
+!i113 0
+R3
+vdecoder_3to8
+R4
+!i10b 1
+!s100 H`d>CczXKnb<Y4mMDEQbD0
+I1oLG?j;Aila05;;acVRnn2
+R0
+R1
+w1705220150
+8F:/mycode/cpu/tuling_complete/verilog_code/BUS/decoder_3to8.v
+FF:/mycode/cpu/tuling_complete/verilog_code/BUS/decoder_3to8.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1708878009.397000
+!s107 F:/mycode/cpu/tuling_complete/verilog_code/BUS/decoder_3to8.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/mycode/cpu/tuling_complete/verilog_code/BUS/decoder_3to8.v|
+!i113 0
+R3
+vimmediate
+R4
+!i10b 1
+!s100 o1J5FA:6L@`P4QZB5oYWI3
+IJhXGB7WCz^1IHBkT5g=BJ0
+R0
+R1
+w1705250572
+8F:/mycode/cpu/tuling_complete/verilog_code/BUS/immediate.v
+FF:/mycode/cpu/tuling_complete/verilog_code/BUS/immediate.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1708878009.492000
+!s107 F:/mycode/cpu/tuling_complete/verilog_code/BUS/immediate.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/mycode/cpu/tuling_complete/verilog_code/BUS/immediate.v|
+!i113 0
+R3
+vpc_counter
+R4
+!i10b 1
+!s100 9EMjVXcD:Q8MQ4BB[@[F^0
+IBQ6CK[D60<G17N<1SZKQS0
+R0
+R1
+w1708877182
+8F:/mycode/cpu/tuling_complete/verilog_code/BUS/pc_count.v
+FF:/mycode/cpu/tuling_complete/verilog_code/BUS/pc_count.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1708878009.584000
+!s107 F:/mycode/cpu/tuling_complete/verilog_code/BUS/pc_count.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/mycode/cpu/tuling_complete/verilog_code/BUS/pc_count.v|
+!i113 0
+R3
+vram_8bit
+R4
+!i10b 1
+!s100 4jm;1NDM]zG;BoCl5km973
+I6Igilz=jbOC<c@NRhW`k[2
+R0
+R1
+w1708876384
+8F:/mycode/cpu/tuling_complete/verilog_code/BUS/ram_8bit.v
+FF:/mycode/cpu/tuling_complete/verilog_code/BUS/ram_8bit.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1708878009.771000
+!s107 F:/mycode/cpu/tuling_complete/verilog_code/BUS/ram_8bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/mycode/cpu/tuling_complete/verilog_code/BUS/ram_8bit.v|
+!i113 0
+R3
+vregister_pluse
+R4
+!i10b 1
+!s100 PIcKYJkbilJdMF4j[UK>z3
+IYW=cTDiTQzoz62dd<43ZU1
+R0
+R1
+w1705248423
+8F:/mycode/cpu/tuling_complete/verilog_code/BUS/register_pluse.v
+FF:/mycode/cpu/tuling_complete/verilog_code/BUS/register_pluse.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1708878009.677000
+!s107 F:/mycode/cpu/tuling_complete/verilog_code/BUS/register_pluse.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/mycode/cpu/tuling_complete/verilog_code/BUS/register_pluse.v|
+!i113 0
+R3

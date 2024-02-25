@@ -1,12 +1,12 @@
 module bus(
-    input   reg [7:0]   code_in,
     input   reg [7:0]   data_in,  //外界输入
+    input   reg         clk,
+    input   reg         rst,
+    input   reg         ram_we,
+    input   reg [7:0]   ram_data_in,
+    input   reg         pc_recount,
 
-
-
-    output      [7:0]   data_out,//输出
-    output      [7:0]   code_addr_out
-    
+    output   wire   [7:0]   data_out//输出
 );
 
 
@@ -20,7 +20,9 @@ wire [7:0]   reg_2_always_out_w;
 wire [7:0]   reg_3_always_out_w;
 
 
+
 reg en =1'b1;
+reg [7:0]   code_in=8'b00000000; 
 reg [7:0]   bus_line = 8'b00000000;
 reg [7:0]   data_load_en_r=8'b00000000;
 reg [7:0]   data_save_en_r=8'b00000000;
@@ -43,16 +45,17 @@ always @(data_save_en or data_load_en or bus_line_w) begin
     reg_0_always_out<=reg_0_always_out_w;
     reg_3_always_out<=reg_3_always_out_w;
 end
-//尝试高组态与运算是否为竞争冒险原因 data_save_en_r[3] || function_sel[1]
-always @(data_save_en_r[3] or function_sel[1])begin
-    if(data_save_en_r[3]==1'b1 ||  function_sel[1]==1'b1)
+//判决器的特殊寄存器
+always @(data_save_en_r[3] or function_sel[3])begin
+    if(data_save_en_r[3]==1'b1 ||  function_sel[3]==1'b1)
         reg_3_en=1'b1;
     else
         reg_3_en=1'b0;
 end
 
-always @(data_save_en_r[0] or function_sel[2])begin
-    if(data_save_en_r[0]==1'b1 ||  function_sel[2]==1'b1)
+//立即数的特殊寄存器
+always @(data_save_en_r[0] or function_sel[0])begin
+    if(data_save_en_r[0]==1'b1 ||  function_sel[0]==1'b1)
         reg_0_en=1'b1;
     else
         reg_0_en=1'b0;
@@ -77,16 +80,18 @@ decoder_2to4 decoder_2to4_sel(
 //寄存器解码
 decoder_3to8  decoder_3to8_save(
    .in  (code_in[2:0])   ,
-   .en  (function_sel_w[0])        ,
+   .en  (function_sel_w[2])        ,
 
    .out (data_save_en)
 );
 
 
 
+
+
 decoder_3to8  decoder_3to8_load(
    .in  (code_in[5:3])   ,
-   .en  (function_sel_w[0])        ,
+   .en  (function_sel_w[2]),
 
    .out (data_load_en)
 );
@@ -101,26 +106,26 @@ alu alu_my(
     .reg_2   (reg_2_always_out_w),
 
     .alu_out(bus_line_w)
-    
-
 );
 
 
 //立即数模块
 immediate immediate_my(
     .count_in(code_in[5:0]),
-    .count_sel(function_sel_w[2]),
+    .count_sel(function_sel_w[0]),
 
     .count_out(bus_line_w)
 
 );
 
+// 判决器模块
 arbiter arbiter_my(
     .reg_0  (reg_0_always_out),
     .reg_3  (reg_3_always_out),
     .arbiter_order(code_in[2:0]),
     .arbiter_sel(function_sel_w[3]),
 
+    .pc_sel     (pc_sel),
     .arbiter_out       (code_addr_out)
 
 );
@@ -207,6 +212,40 @@ register_pluse  register_pluser_out(
     .data_out_always    ()
 );
 
+
+reg         pc_sel_r;
+reg  [7:0]  code_addr_out_r;
+reg  [7:0]  pc_addr_r;
+wire [7:0]  ram_data_out;
+wire [7:0]  pc_addr;
+
+always @(*) begin
+    code_addr_out_r<=code_addr_out;
+    pc_sel_r<=pc_sel;
+    code_in<=ram_data_out;
+    pc_addr_r<=pc_addr;
+end
+
+//pc计数器
+pc_counter pc_counter_my(
+    .clk              (clk),          
+    .reset            (rst),
+    .model_sel        (pc_sel_r),
+    .pc_recount       (pc_recount),
+    .load_value        (code_addr_out_r),     
+
+    .pc_w                (pc_addr)
+);
+//ram 
+ram_8bit    ram_8bit_my(
+    .clk         (clk), 
+    .rst         (rst), 
+    .we          (ram_we),  
+    .data_in     (ram_data_in), 
+    .addr        (pc_addr),    
+
+    .data_out    (ram_data_out)
+);
 
 
 

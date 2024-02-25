@@ -7,6 +7,7 @@ reg clk;
 reg reset;
 reg model_sel;
 reg [7:0] load_value;
+reg en;
 
 // Output
 wire [7:0] pc;
@@ -14,6 +15,7 @@ wire [7:0] pc;
 initial begin
     // 初始化
     clk = 0;
+    en=1;
     reset = 0;
     model_sel = 0;
     load_value = 0;
@@ -49,5 +51,6 @@ pc_counter uut (
     .reset(reset), 
     .model_sel(model_sel), 
     .load_value(load_value), 
+    .en  (en),
     .pc(pc)
 );

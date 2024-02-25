@@ -5,6 +5,13 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	bus
 
+} {} {}} F:/mycode/cpu/tuling_complete/verilog_code/BUS/ram_8bit.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/BUS/ram_8bit.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module ram_8bit
+
+Top level modules:
+	ram_8bit
+
 } {} {}} F:/mycode/cpu/tuling_complete/verilog_code/BUS/alu.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/BUS/alu.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module alu
@@ -19,12 +26,19 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	decoder_2to4
 
-} {} {}} F:/mycode/cpu/tuling_complete/verilog_code/BUS/immediate.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/BUS/immediate.v
+} {} {}} F:/mycode/cpu/tuling_complete/verilog_code/BUS/pc_count.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/BUS/pc_count.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module immediate
+-- Compiling module pc_counter
 
 Top level modules:
-	immediate
+	pc_counter
+
+} {} {}} F:/mycode/cpu/tuling_complete/verilog_code/BUS/bus_tb.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/BUS/bus_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module bus_tb
+
+Top level modules:
+	bus_tb
 
 } {} {}} F:/mycode/cpu/tuling_complete/verilog_code/BUS/decoder_3to8.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/BUS/decoder_3to8.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -33,12 +47,19 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	decoder_3to8
 
-} {} {}} F:/mycode/cpu/tuling_complete/verilog_code/BUS/bus_tb.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/BUS/bus_tb.v
+} {} {}} F:/mycode/cpu/tuling_complete/verilog_code/BUS/immediate.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/BUS/immediate.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module bus_tb
+-- Compiling module immediate
 
 Top level modules:
-	bus_tb
+	immediate
+
+} {} {}} F:/mycode/cpu/tuling_complete/verilog_code/BUS/arbiter.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/BUS/arbiter.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module arbiter
+
+Top level modules:
+	arbiter
 
 } {} {}} F:/mycode/cpu/tuling_complete/verilog_code/BUS/register_pluse.v {1 {vlog -work work -vopt -stats=none F:/mycode/cpu/tuling_complete/verilog_code/BUS/register_pluse.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
